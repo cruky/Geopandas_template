@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  geopandas_api:
+    container_name: geopandas_api
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      FLASK_APP: src/geopandas_app/geopandas_app.py
+      PORT: 5000

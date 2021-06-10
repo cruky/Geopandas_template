@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "geopandas_app"
+version = "0.1.0"
+description = ""
+authors = ["Kamil Kruk <kamil.kruk@jeppesen.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.0.1"
+numpy="1.20.3"
+#GDAL="2.4.0"
+#Fiona="1.8.19"
+GDAL = {path = "env_wh/GDAL-3.3.0-cp39-cp39-win_amd64.whl"}
+Fiona = {path = "env_wh/Fiona-1.8.20-cp39-cp39-win_amd64.whl"}
+pyproj="3.0.1"
+Shapely="1.7.1"
+pandas="1.2.4"
+Rtree="0.9.7"
+geopandas="0.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
